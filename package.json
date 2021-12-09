@@ -1,6 +1,6 @@
 {
   "name": "@sniptt/monads",
-  "version": "0.5.8",
+  "version": "0.5.9",
   "description": "Option, Result, and Either types for JavaScript; Inspired by Rust",
   "main": "build/index.js",
   "types": "build",
@@ -27,7 +27,7 @@
   "homepage": "https://github.com/sniptt-official/monads",
   "bugs": "https://github.com/sniptt-official/monads/issues",
   "scripts": {
-    "build": "rm -rf build deno && tsc && denoify && mv deno_build deno && npm run format",
+    "build": "tsc && denoify && mv deno_build deno && npm run format",
     "format": "prettier --loglevel warn --write \"**/*.{ts,js,json,yaml}\"",
     "format:check": "prettier --loglevel warn --check \"**/*.{ts,js,json,yaml}\"",
     "test": "nyc ava --fail-fast ./test/**/*.test.ts",
